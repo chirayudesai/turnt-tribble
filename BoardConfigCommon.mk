@@ -16,3 +16,5 @@
 include device/sony/qcom-common/BoardConfigCommon.mk
 
 TARGET_BOARD_PLATFORM := msm8960
+
+USE_DEVICE_SPECIFIC_CAMERA := true
