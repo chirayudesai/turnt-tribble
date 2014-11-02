@@ -14,3 +14,16 @@
 
 # inherit from qcom-common
 $(call inherit-product, device/sony/qcom-common/qcom-common.mk)
+
+# NFC Support
+PRODUCT_PACKAGES += \
+    libnfc \
+    libnfc_jni \
+    Nfc \
+    Tag \
+    com.android.nfc_extras
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml
+    
+    
