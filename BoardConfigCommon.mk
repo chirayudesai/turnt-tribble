@@ -14,3 +14,5 @@
 
 # inherit from qcom-common
 include device/sony/qcom-common/BoardConfigCommon.mk
+
+TARGET_BOARD_PLATFORM := msm8960
