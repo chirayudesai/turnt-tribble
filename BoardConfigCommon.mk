@@ -16,5 +16,9 @@
 include device/sony/qcom-common/BoardConfigCommon.mk
 
 TARGET_BOARD_PLATFORM := msm8960
+TARGET_CPU_VARIANT := krait
+
+# we have old pre kitkat blobs 
+COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
 
 USE_DEVICE_SPECIFIC_CAMERA := true
