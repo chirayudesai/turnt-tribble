@@ -14,3 +14,20 @@
 
 # inherit from qcom-common
 include device/sony/qcom-common/BoardConfigCommon.mk
+
+TARGET_BOARD_PLATFORM := msm8960
+TARGET_CPU_VARIANT := krait
+
+# we have old pre kitkat blobs 
+COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
+
+USE_DEVICE_SPECIFIC_CAMERA := true
+
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_QCOM_AUDIO_VARIANT := caf
+TARGET_QCOM_DISPLAY_VARIANT := caf
+TARGET_QCOM_MEDIA_VARIANT := caf
+
+BOARD_HAS_NO_SELECT_BUTTON := true
+TARGET_USERIMAGES_USE_EXT4 := true
+
